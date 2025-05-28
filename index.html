@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -44,41 +45,47 @@
     }
     .products-section h2 {
       font-size: 2rem;
-      margin-bottom: 0.2rem;
+      margin-bottom: 0.5rem;
     }
-    .products-section p {
-      font-size: 1rem;
-      color: #333;
-      margin-bottom: 2rem;
-    }
-    .cards {
+    .product-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 1.5rem;
+      margin-top: 2rem;
     }
-    .card {
-      border-radius: 20px;
+    .product-card {
+      border-radius: 16px;
       padding: 1rem;
-      color: #000;
+      background: #fff3cd;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
     }
-    .clothing {
-      background-color: #b2dbff;
-    }
-    .electronics {
-      background-color: #ff7575;
-    }
-    .card img {
-      max-width: 100%;
-      height: auto;
+    .product-card img {
+      width: 100%;
       border-radius: 10px;
-      margin-bottom: 1rem;
+      height: 200px;
+      object-fit: cover;
     }
-    .card h3 {
-      margin: 0.5rem 0;
+    .product-card h3 {
+      margin-top: 1rem;
       font-size: 1.3rem;
     }
-    .card p {
-      font-size: 0.95rem;
+    .product-card p {
+      margin: 0.5rem 0;
+    }
+    .price {
+      font-weight: bold;
+      margin-top: 0.5rem;
+    }
+    .buy-button {
+      display: inline-block;
+      margin-top: 1rem;
+      background-color: #007bff;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
     }
     footer {
       background-color: #111;
@@ -99,19 +106,23 @@
   </header>
 
   <section class="products-section">
-    <h2>المنتجات</h2>
-    <p>Products</p>
+    <h2>المنتجات الجديدة</h2>
 
-    <div class="cards">
-      <div class="card clothing">
-        <img src="https://via.placeholder.com/300x200.png?text=T-Shirt" alt="ملابس">
-        <h3>الملابس</h3>
-        <p>مجموعة أزياء عصرية تناسب جميع الأذواق</p>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200.png?text=T-Shirt" alt="تيشيرت أبيض">
+        <h3>تيشيرت أبيض</h3>
+        <p>قطن ناعم 100%، تصميم أنيق.</p>
+        <div class="price">49 ريال</div>
+        <a class="buy-button" href="product-tshirt.html">عرض التفاصيل</a>
       </div>
-      <div class="card electronics">
-        <img src="https://via.placeholder.com/300x200.png?text=Electronics" alt="إلكترونيات">
-        <h3>الإلكترونيات</h3>
-        <p>أحدث الأجهزة الإلكترونية عالية الجودة</p>
+
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200.png?text=Headphones" alt="سماعة بلوتوث">
+        <h3>سماعة بلوتوث</h3>
+        <p>صوت عالي الجودة، بطارية تدوم طويلًا.</p>
+        <div class="price">129 ريال</div>
+        <a class="buy-button" href="product-headphones.html">عرض التفاصيل</a>
       </div>
     </div>
   </section>
