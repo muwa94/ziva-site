@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ziva Store | متجر زيفا</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #000;
+      background-color: #fdfdfd;
+    }
+    header {
+      background-color: #ffdd00;
+      color: #000;
+      padding: 2rem 1rem 1rem;
+      text-align: center;
+    }
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+    .logo img {
+      width: 80px;
+      height: auto;
+    }
+    .logo-text {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #000;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+    }
+    .products-section {
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    .products-section h2 {
+      font-size: 2rem;
+      margin-bottom: 0.2rem;
+    }
+    .products-section p {
+      font-size: 1rem;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      border-radius: 20px;
+      padding: 1rem;
+      color: #000;
+    }
+    .clothing {
+      background-color: #b2dbff;
+    }
+    .electronics {
+      background-color: #ff7575;
+    }
+    .card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+    .card h3 {
+      margin: 0.5rem 0;
+      font-size: 1.3rem;
+    }
+    .card p {
+      font-size: 0.95rem;
+    }
+    footer {
+      background-color: #111;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="شعار Ziva">
+      <div class="logo-text">ZIVA</div>
+    </div>
+    <p>اكتشف أفضل العروض على الملابس والإلكترونيات</p>
+  </header>
+
+  <section class="products-section">
+    <h2>المنتجات</h2>
+    <p>Products</p>
+
+    <div class="cards">
+      <div class="card clothing">
+        <img src="https://via.placeholder.com/300x200.png?text=T-Shirt" alt="ملابس">
+        <h3>الملابس</h3>
+        <p>مجموعة أزياء عصرية تناسب جميع الأذواق</p>
+      </div>
+      <div class="card electronics">
+        <img src="https://via.placeholder.com/300x200.png?text=Electronics" alt="إلكترونيات">
+        <h3>الإلكترونيات</h3>
+        <p>أحدث الأجهزة الإلكترونية عالية الجودة</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Ziva Store | جميع الحقوق محفوظة
+  </footer>
+</body>
+</html>
