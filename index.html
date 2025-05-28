@@ -11,11 +11,12 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: #000;
       background-color: #fdfdfd;
+      scroll-behavior: smooth;
     }
     header {
       background-color: #ffdd00;
       color: #000;
-      padding: 2rem 1rem 1rem;
+      padding: 1rem;
       text-align: center;
     }
     .logo {
@@ -24,72 +25,78 @@
       align-items: center;
       gap: 1rem;
       flex-wrap: wrap;
-      margin-bottom: 1rem;
     }
     .logo img {
-      width: 80px;
+      width: 60px;
       height: auto;
+      background-color: #ffdd00;
+      padding: 0.2rem;
+      border-radius: 8px;
     }
     .logo-text {
-      font-size: 2.5rem;
+      font-size: 2rem;
       font-weight: bold;
       color: #000;
     }
-    header p {
-      margin-top: 0.5rem;
-      font-size: 1rem;
+    nav {
+      margin-top: 1rem;
     }
-    .products-section {
+    nav a {
+      margin: 0 1rem;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .section {
       padding: 2rem 1rem;
+    }
+    .section h2 {
       text-align: center;
-    }
-    .products-section h2 {
       font-size: 2rem;
-      margin-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
     }
-    .product-grid {
+    .products {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 1.5rem;
-      margin-top: 2rem;
     }
     .product-card {
-      border-radius: 16px;
+      background-color: #fff8dc;
+      border-radius: 12px;
       padding: 1rem;
-      background: #fff3cd;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       text-align: center;
     }
     .product-card img {
       width: 100%;
-      border-radius: 10px;
-      height: 200px;
+      height: 180px;
       object-fit: cover;
+      border-radius: 8px;
     }
     .product-card h3 {
-      margin-top: 1rem;
-      font-size: 1.3rem;
+      margin: 0.8rem 0 0.5rem;
+      font-size: 1.2rem;
     }
     .product-card p {
-      margin: 0.5rem 0;
+      font-size: 0.95rem;
     }
     .price {
       font-weight: bold;
-      margin-top: 0.5rem;
+      margin: 0.5rem 0;
     }
-    .buy-button {
-      display: inline-block;
-      margin-top: 1rem;
+    .btn {
       background-color: #007bff;
       color: white;
       padding: 0.5rem 1rem;
       border: none;
-      border-radius: 8px;
+      border-radius: 6px;
       text-decoration: none;
+      display: inline-block;
+      margin-top: 0.5rem;
     }
     footer {
       background-color: #111;
-      color: #fff;
+      color: white;
       text-align: center;
       padding: 1rem;
       margin-top: 2rem;
@@ -99,30 +106,52 @@
 <body>
   <header>
     <div class="logo">
-      <img src="logo.png" alt="شعار Ziva">
+      <img src="logo.png" alt="Ziva logo">
       <div class="logo-text">ZIVA</div>
     </div>
+    <nav>
+      <a href="#electronics">إلكترونيات</a>
+      <a href="#clothing">الملابس</a>
+    </nav>
     <p>اكتشف أفضل العروض على الملابس والإلكترونيات</p>
   </header>
 
-  <section class="products-section">
-    <h2>المنتجات الجديدة</h2>
-
-    <div class="product-grid">
+  <section id="electronics" class="section">
+    <h2>📱 الإلكترونيات</h2>
+    <div class="products">
       <div class="product-card">
-        <img src="https://via.placeholder.com/300x200.png?text=T-Shirt" alt="تيشيرت أبيض">
-        <h3>تيشيرت أبيض</h3>
-        <p>قطن ناعم 100%، تصميم أنيق.</p>
-        <div class="price">49 ريال</div>
-        <a class="buy-button" href="product-tshirt.html">عرض التفاصيل</a>
+        <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7" alt="iPhone 15">
+        <h3>iPhone 15</h3>
+        <p>أداء عالي، كاميرا مذهلة</p>
+        <div class="price">4199 ريال</div>
+        <a href="#" class="btn">أضف إلى السلة</a>
       </div>
-
       <div class="product-card">
-        <img src="https://via.placeholder.com/300x200.png?text=Headphones" alt="سماعة بلوتوث">
-        <h3>سماعة بلوتوث</h3>
-        <p>صوت عالي الجودة، بطارية تدوم طويلًا.</p>
-        <div class="price">129 ريال</div>
-        <a class="buy-button" href="product-headphones.html">عرض التفاصيل</a>
+        <img src="https://images.unsplash.com/photo-1589396576647-76c89b7c0e40" alt="Samsung S23">
+        <h3>Samsung Galaxy S23</h3>
+        <p>تصميم أنيق، أداء قوي</p>
+        <div class="price">3699 ريال</div>
+        <a href="#" class="btn">أضف إلى السلة</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="clothing" class="section">
+    <h2>👕 الملابس</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1520975912045-6c2a7c0b2cde" alt="جاكيت رجالي">
+        <h3>جاكيت شتوي رجالي</h3>
+        <p>مريح وعصري لفصل الشتاء</p>
+        <div class="price">199 ريال</div>
+        <a href="#" class="btn">أضف إلى السلة</a>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab" alt="تيشيرت نسائي">
+        <h3>تيشيرت نسائي</h3>
+        <p>قطن ناعم وتصميم جذاب</p>
+        <div class="price">89 ريال</div>
+        <a href="#" class="btn">أضف إلى السلة</a>
       </div>
     </div>
   </section>
